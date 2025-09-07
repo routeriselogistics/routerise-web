@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet | Route Rise Logistics</title>
+    <link rel="icon" href="images/truck-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Header Banner -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logofinal.png" alt="Route Rise Logistics Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="fleet.html" class="active">OUR FLEET</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Our Fleet</h1>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="courses">
+        <h1>Powerful & Diverse Fleet</h1>
+        <p>Our fleet covers a wide range of equipment types, ensuring we can move freight of all shapes and sizes across the country.</p>
+        
+        <div class="row">
+            <div class="courses-col"> 
+                
+                <h3>Box Truck</h3> 
+                <p>Ideal for short-haul and regional deliveries. Our box trucks ensure quick transport of retail, furniture, and parcel shipments.</p>
+            </div>
+            <div class="courses-col"> 
+                
+                <h3>Reefer</h3> 
+                <p>Refrigerated trailers maintain temperature control for food, beverages, and pharmaceuticals, ensuring product safety.</p>
+            </div>
+            <div class="courses-col"> 
+                
+                <h3>Car Hauler</h3> 
+                <p>Specialized trailers designed for secure auto transport, whether moving single cars or multiple vehicles at once.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="courses-col"> 
+               
+                <h3>Power Only</h3> 
+                <p>Provides flexible solutions by connecting tractors with customer trailers, giving carriers more opportunities for freight.</p>
+            </div>
+            <div class="courses-col"> 
+               
+                <h3>Dry Van</h3> 
+                <p>The most versatile equipment, dry vans move general cargo efficiently across short and long-haul routes.</p>
+            </div>
+            <div class="courses-col"> 
+               
+                <h3>Flatbed</h3> 
+                <p>Built for oversized and heavy freight such as machinery, lumber, and construction materials requiring open-deck transport.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="CTA">
+        <h1>Drive With Us<br> Join Our Fleet Today</h1>
+        <a href="contact.html" class="hero-btn">Become a Partner</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>At Route Rise Logistics, we specialize in professional dispatch and logistics services for owner-operators and carriers. Our mission is to keep your trucks moving and your business growing.</p>
+       <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61580265393255"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/routeriselogistics/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        <p>© 2025 Route Rise Logistics | All Rights Reserved</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks =document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right= "0";
+        }
+        function hidemenu(){
+            navLinks.style.right= "-200px";
+        }
+    </script>
+</body>
+</html>

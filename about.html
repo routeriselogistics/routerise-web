@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Route Rise Logistics</title>
+  <link rel="icon" href="images/truck-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Banner -->
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logofinal.png" alt="Route Rise Logistics Logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html" class="active">ABOUT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="fleet.html">OUR FLEET</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <h1>About Route Rise Logistics</h1>
+  </section>
+
+  <!-- About Company -->
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>Your Partner in Dispatch & Logistics</h1>
+        <p>At Route Rise Logistics, we go beyond traditional dispatching. We provide 
+           complete logistics support tailored for owner-operators, carriers, and 
+           shippers across the United States. From negotiating top-paying loads to 
+           providing 24/7 dispatch assistance, our team is committed to keeping 
+           your business profitable and stress-free.</p>
+        <p>Our mission is simple — keep your wheels rolling while delivering 
+           excellence, transparency, and reliability every step of the way.</p>
+      </div>
+      <div class="about-col">
+        <img src="images/back3.jpg" alt="About Route Rise Logistics">
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="courses">
+    <h1>Our Mission & Vision</h1>
+    <div class="row">
+      <div class="courses-col">
+        <h3>Our Mission</h3>
+        <p>To empower drivers and carriers with reliable dispatch services, 
+           helping them maximize profits and minimize downtime.</p>
+      </div>
+      <div class="courses-col">
+        <h3>Our Vision</h3>
+        <p>To become the most trusted name in logistics by providing innovative 
+           solutions and unmatched support to trucking businesses nationwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="facilities">
+    <h1>Why Choose Route Rise Logistics?</h1>
+    <p>We combine experience, technology, and dedication to keep freight moving efficiently.</p>
+    <div class="row">
+      <div class="facilities-col">
+        <i class="fa-solid fa-headset fa-2x" style="color:#0077b6;"></i>
+        <h3>24/7 Dispatch</h3>
+        <p>Round-the-clock support to keep your trucks moving without interruptions.</p>
+      </div>
+      <div class="facilities-col">
+        <i class="fa-solid fa-handshake fa-2x" style="color:#0077b6;"></i>
+        <h3>Trusted Partnerships</h3>
+        <p>Strong relationships with shippers and carriers for consistent loads.</p>
+      </div>
+      <div class="facilities-col">
+        <i class="fa-solid fa-sack-dollar fa-2x" style="color:#0077b6;"></i>
+        <h3>High Paying Loads</h3>
+        <p>We negotiate competitive rates to maximize your earnings per mile.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="facilities-col">
+        <i class="fa-solid fa-truck-fast fa-2x" style="color:#0077b6;"></i>
+        <h3>Nationwide Coverage</h3>
+        <p>From coast to coast, we move freight across all states efficiently.</p>
+      </div>
+      <div class="facilities-col">
+        <i class="fa-solid fa-clipboard-check fa-2x" style="color:#0077b6;"></i>
+        <h3>No Hidden Fees</h3>
+        <p>Transparent pricing and fair practices that carriers can trust.</p>
+      </div>
+      <div class="facilities-col">
+        <i class="fa-solid fa-users fa-2x" style="color:#0077b6;"></i>
+        <h3>Experienced Team</h3>
+        <p>Our logistics experts bring knowledge and reliability to every load.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call To Action -->
+  <section class="CTA">
+    <h1>Work With Route Rise Logistics Today</h1>
+    <a href="contact.html" class="hero-btn">Join Our Network</a>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Route Rise Logistics — helping carriers, owner-operators, and drivers succeed with 
+       dependable dispatch services. We keep America moving one load at a time.</p>
+   <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61580265393255"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/routeriselogistics/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+    <p>© 2025 Route Rise Logistics | All Rights Reserved</p>
+  </section>
+
+  <!-- JavaScript for Toggle Menu -->
+  <script>
+    var navLinks =document.getElementById("navLinks");
+    function showmenu(){
+      navLinks.style.right= "0";
+    }
+    function hidemenu(){
+      navLinks.style.right= "-200px";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us | Route Rise Logistics</title>
+  <link rel="icon" href="images/truck-icon.png">
+  <!-- main site css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- fonts + icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Banner -->
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logofinal.png" alt="Route Rise Logistics logo"></a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="fleet.html">OUR FLEET</a></li>
+          
+          <li><a href="contact.html" class="active">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+    <h1>Contact Route Rise Logistics</h1>
+  </section>
+
+  <!-- Contact Info (icons + quick info) -->
+
+
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <div class="contact-form-inner">
+      <h2>Send Us a Message</h2>
+      <p class="muted">Questions about dispatch, partnership, or loads? Fill this form and we'll get back ASAP.</p>
+
+      <!-- IMPORTANT: replace `yourFormID` with your Formspree form ID -->
+      <form id="rrl-contact-form" action="https://formspree.io/f/xovnywog" method="POST">
+        <!-- Formspree recognizes email via name="_replyto" or "email". We'll keep both -->
+        <input type="text" name="name" placeholder="Full name" required aria-label="Full name">
+        <input type="email" name="email" placeholder="Email address" required aria-label="Email address">
+        <input type="tel" name="phone" placeholder="Phone (optional)" aria-label="Phone number">
+        <input type="text" name="subject" placeholder="Subject" required aria-label="Subject">
+        <textarea name="message" rows="6" placeholder="Your message" required aria-label="Your message"></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="hero-btn">Send Message</button>
+          <div id="form-status" aria-live="polite"></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <h4>Contact Us</h4>
+    <p>We’re here to help with all your dispatch and logistics needs.</p>
+  <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61580265393255"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/routeriselogistics/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+    <p>© 2025 Route Rise Logistics | All Rights Reserved</p>
+  </section>
+
+  <script>
+    // toggle menu (same as your site)
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){ navLinks.style.right = "0"; }
+    function hidemenu(){ navLinks.style.right = "-200px"; }
+
+    // Optional: small UX feedback on submit (non-blocking)
+    (function(){
+      var form = document.getElementById('rrl-contact-form');
+      var status = document.getElementById('form-status');
+
+      form.addEventListener('submit', function(e){
+        // show a quick status message while the form posts to Formspree
+        status.textContent = 'Sending…';
+        status.style.color = '#0077b6';
+      });
+    })();
+  </script>
+</body>
+</html>

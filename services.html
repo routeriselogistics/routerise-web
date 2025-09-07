@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Route Rise Logistics</title>
+    <link rel="icon" href="images/truck-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Header Banner -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logofinal.png" alt="Route Rise Logistics Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html" class="active">SERVICES</a></li>
+                    <li><a href="fleet.html">OUR FLEET</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Our Logistics Services</h1>
+    </section>
+
+    <!-- Dispatch Services Section -->
+    <section class="courses">
+        <h1>Professional Dispatch Services</h1>
+        <p>At Route Rise Logistics, dispatching is more than just booking loads. We act as your back-office partner, allowing you to focus on driving while we handle the rest:</p>
+
+        <div class="row">
+            <div class="courses-col">
+                <h3>Load Searching & Booking</h3>
+                <p>We find the best freight opportunities that fit your equipment type, preferred routes, and rate expectations. Our dispatchers negotiate on your behalf to secure profitable loads every time.</p>
+            </div>
+            <div class="courses-col">
+                <h3>Rate Negotiation</h3>
+                <p>We communicate directly with brokers and shippers to negotiate the best possible rates, ensuring you maximize your earnings on every trip.</p>
+            </div>
+            <div class="courses-col">
+                <h3>Paperwork & Compliance</h3>
+                <p>We handle rate confirmations, bills of lading, and ensure compliance with FMCSA regulations so you can stay stress-free on the road.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="courses-col">
+                <h3>24/7 Driver Support</h3>
+                <p>Our dispatch team is available around the clock to assist with route planning, updates, and any issues that may arise during transit.</p>
+            </div>
+            <div class="courses-col">
+                <h3>Factoring & Invoicing Assistance</h3>
+                <p>We work with factoring companies and assist in preparing invoices so that you get paid on time without financial stress.</p>
+            </div>
+            <div class="courses-col">
+                <h3>Dedicated Carrier Relations</h3>
+                <p>We build long-term partnerships with our carriers, learning your preferences to provide consistent freight and trusted support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Services Section -->
+    <section class="courses">
+        <h1>Equipment We Dispatch</h1>
+        <p>We specialize in dispatching across multiple equipment types to keep your trucks loaded and profitable.</p>
+        
+        <div class="row">
+            <div class="courses-col"> 
+                <h3>Box Truck</h3> 
+                <p>Perfect for regional and last-mile freight. We connect box truck operators with steady loads such as retail, furniture, and parcel deliveries.</p>
+            </div>
+            <div class="courses-col"> 
+                <h3>Reefer</h3> 
+                <p>Expert dispatch for refrigerated trailers, keeping temperature-sensitive freight like food, beverages, and pharmaceuticals moving safely and on time.</p>
+            </div>
+            <div class="courses-col"> 
+                <h3>Car Hauler</h3> 
+                <p>Specialized dispatch services for single and multi-car haulers, ensuring secure transportation and optimized scheduling.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="courses-col"> 
+                <h3>Power Only</h3> 
+                <p>We connect power units with trailers from brokers and shippers nationwide, giving you flexibility and constant work opportunities.</p>
+            </div>
+            <div class="courses-col"> 
+                <h3>Dry Van</h3> 
+                <p>The most versatile freight option. We help dry van operators with general cargo, retail goods, and nationwide routes at strong rates.</p>
+            </div>
+            <div class="courses-col"> 
+                <h3>Flatbed</h3> 
+                <p>Specialized dispatch for oversized and heavy loads, including construction materials, machinery, and industrial freight.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="CTA">
+        <h1>Ready to Keep Your Trucks Moving?<br> Partner With Route Rise Logistics Today</h1>
+        <a href="contact.html" class="hero-btn">Get a Quote</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>At Route Rise Logistics, we specialize in professional dispatch and logistics services for owner-operators and carriers. Our mission is to keep your trucks moving and your business growing.</p>
+      <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61580265393255"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/routeriselogistics/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        <p>© 2025 Route Rise Logistics | All Rights Reserved</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks =document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right= "0";
+        }
+        function hidemenu(){
+            navLinks.style.right= "-200px";
+        }
+    </script>
+</body>
+</html>
