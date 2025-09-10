@@ -611,3 +611,41 @@ border-radius: 50%;
   .contact-col { flex-basis: 100%; }
   .text-box h1 { font-size: 30px; } /* if used on small displays */
 }
+.courses-col {
+  position: relative;
+  background: #e0f2ff; /* light blue */
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+/* Watermark text */
+.courses-col::after {
+  content: "Route Rise Logistics";
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.1); /* faint text */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.courses-col:hover::after {
+  opacity: 1;
+}
+
+.instagram-icon i {
+  background: radial-gradient(circle at 30% 107%, 
+              #fdf497 0%, #fdf497 5%, 
+              #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
