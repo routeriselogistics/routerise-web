@@ -47,18 +47,40 @@
 
       <!-- IMPORTANT: replace `yourFormID` with your Formspree form ID -->
       <form id="rrl-contact-form" action="https://formspree.io/f/xovnywog" method="POST">
-        <!-- Formspree recognizes email via name="_replyto" or "email". We'll keep both -->
-        <input type="text" name="name" placeholder="Full name" required aria-label="Full name">
-        <input type="email" name="email" placeholder="Email address" required aria-label="Email address">
-        <input type="tel" name="phone" placeholder="Phone (optional)" aria-label="Phone number">
-        <input type="text" name="subject" placeholder="Subject" required aria-label="Subject">
-        <textarea name="message" rows="6" placeholder="Your message" required aria-label="Your message"></textarea>
+  <!-- Name -->
+  <input type="text" name="name" placeholder="Full name" required aria-label="Full name">
 
-        <div class="form-actions">
-          <button type="submit" class="hero-btn">Send Message</button>
-          <div id="form-status" aria-live="polite"></div>
-        </div>
-      </form>
+  <!-- Email -->
+  <input type="email" name="email" placeholder="Email address" required aria-label="Email address">
+
+  <!-- Phone -->
+  <input type="tel" name="phone" placeholder="Phone (optional)" aria-label="Phone number">
+
+  <!-- Dropdown: Truck Type -->
+  <select name="truck_type" required aria-label="Truck type">
+    <option value="" disabled selected>Select your truck type</option>
+    <option value="Box Truck">Box Truck</option>
+    <option value="Reefer">Reefer</option>
+    <option value="Car Hauler">Car Hauler</option>
+    <option value="Power Only">Power Only</option>
+    <option value="Dry Van">Dry Van</option>
+    <option value="Flatbed">Flatbed</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <!-- Subject -->
+  <input type="text" name="subject" placeholder="Subject" required aria-label="Subject">
+
+  <!-- Message -->
+  <textarea name="message" rows="6" placeholder="Your message" required aria-label="Your message"></textarea>
+
+  <!-- Actions -->
+  <div class="form-actions">
+    <button type="submit" class="hero-btn">Send Message</button>
+    <div id="form-status" aria-live="polite"></div>
+  </div>
+</form>
+
     </div>
   </section>
 
@@ -67,7 +89,7 @@
     <h4>Contact Us</h4>
     <p>We’re here to help with all your dispatch and logistics needs.</p>
   <div class="icons">
-  <a href="https://www.facebook.com/share/17MjizsZAJ/?mibextid=wwXIfr>
+  <a href="https://www.facebook.com/share/17MjizsZAJ/?mibextid=wwXIfr">
     <i class="fa-2x fa-brands fa-square-facebook"></i>
   </a>
   <a href="https://www.instagram.com/routeriselogistics/" class="instagram-icon">
