@@ -631,6 +631,8 @@ border-radius: 50%;
   background-clip: text;
   color: transparent;
 }
+.contact-form-inner form input,
+.contact-form-inner form textarea,
 .contact-form-inner form select {
   width: 100%;
   padding: 12px;
@@ -639,5 +641,7 @@ border-radius: 50%;
   border-radius: 4px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  background: #fff;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
 }
